@@ -1,0 +1,12 @@
+<head>
+    <meta charset="utf-8" />
+    <title>{{ .Site.Title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {{ $styles := resources.Get "css/tailwind.css" }}
+    {{ $styles = $styles | resources.PostCSS (dict "inlineImports" true) }}
+    {{ if hugo.IsProduction }}
+    {{ $styles = $styles | minify }}
+    {{ end }}
+
+<link href="{{ $styles.Permalink }}" rel="stylesheet" />
+</head>

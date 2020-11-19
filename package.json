@@ -1,0 +1,29 @@
+{
+  "name": "tech-to-use",
+  "version": "0.0.1",
+  "description": "A website for what project you could use for a project",
+  "scripts": {
+    "dev": "hugo server",
+    "build": "NODE_ENV=production hugo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samrobbins85/tech-to-use.git"
+  },
+  "author": "Sam Robbins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samrobbins85/tech-to-use/issues"
+  },
+  "homepage": "https://github.com/samrobbins85/tech-to-use#readme",
+  "devDependencies": {
+    "postcss-cli": "^8.3.0",
+    "prettier": "^2.1.2",
+    "prettier-plugin-go-template": "0.0.10"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
+  }
+}
