@@ -1,5 +1,17 @@
 {{ define "main" }}
-
-<p class="text-center">Hello</p>
-
+  <div class="text-center">
+    <h1 class="text-5xl font-semibold pt-16">Web Tech to Use</h1>
+    <h2 class="text-xl text-gray-600 pt-4">
+      What technologies you can use when building your next website
+    </h2>
+  </div>
+  <div class="flex justify-center">
+    <ul class="flex flex-col">
+      {{ range where .Site.RegularPages "Section" "categories" }}
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
 {{ end }}
