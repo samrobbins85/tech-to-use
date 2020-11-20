@@ -22,8 +22,9 @@
     "prettier-plugin-go-template": "0.0.10"
   },
   "dependencies": {
-    "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.35",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
+    "autoprefixer": "^10.0.2",
+    "postcss": "^8.1.8",
+    "postcss-import": "^13.0.0",
+    "tailwindcss": "^2.0.1"
   }
 }
