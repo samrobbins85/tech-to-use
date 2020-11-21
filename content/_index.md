@@ -1,3 +1,2 @@
 ---
-title: Tech To Use
 ---

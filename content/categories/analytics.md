@@ -5,7 +5,7 @@ tech:
     link: https://analytics.google.com/
     image: https://cdn.svgporn.com/logos/google-analytics.svg
     free_tier: true
-    limit: 50 Sites
+    limit: 100 Sites
   - name: Plausible Analytics
     link: https://plausible.io/
     image: https://plausible.io/assets/images/icon/plausible_logo.compressed.png
