@@ -13,6 +13,9 @@ module.exports = {
         fuchsia: colors.fuchsia,
         teal: colors.teal,
       },
+      maxWidth: {
+        read: "65ch",
+      },
     },
   },
   variants: {
@@ -20,6 +23,6 @@ module.exports = {
       fontWeight: ["hover"],
     },
   },
-  
+
   plugins: [],
 };

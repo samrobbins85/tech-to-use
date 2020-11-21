@@ -24,3 +24,5 @@ properties:
   pricing: true
   free_tier: true
 ---
+
+Due to the nature of this page being about user tracking, you may find that your adblocker causes some things on this page to break. If this does, you will need to turn it off to see all the content.
