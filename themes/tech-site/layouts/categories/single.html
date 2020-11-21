@@ -30,6 +30,7 @@
         ></script>
       </div>
     </div>
+    <div class="container text-center mx-auto py-4 text-lg">{{ .Content }}</div>
     <div class="overflow-x-auto px-2">
       <table class="table-auto w-1/2 mx-auto">
         <thead>
@@ -40,6 +41,9 @@
             {{ end }}
             {{ if .Params.properties.type }}
               <th class="px-4 py-2 ">Type</th>
+            {{ end }}
+            {{ if .Params.properties.size }}
+              <th class="px-4 py-2 ">Size</th>
             {{ end }}
             {{ if .Params.properties.free_tier }}
               <th class="px-4 py-2 ">Free Tier?</th>
@@ -78,6 +82,11 @@
               {{ if $.Params.properties.type }}
                 <td class="px-4 py-2  font-medium text-center">
                   {{ .type }}
+                </td>
+              {{ end }}
+              {{ if $.Params.properties.size }}
+                <td class="px-4 py-2  font-medium text-center">
+                  {{ .size }}
                 </td>
               {{ end }}
               {{ if $.Params.properties.free_tier }}

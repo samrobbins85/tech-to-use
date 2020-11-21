@@ -29,5 +29,3 @@ properties:
   description: true
   free_tier: true
 ---
-
-Hello, world!

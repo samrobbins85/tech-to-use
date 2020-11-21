@@ -7,11 +7,13 @@
   </div>
   <div class="flex justify-center pt-8">
     <ul
-      class="flex flex-col text-center divide-y max-w-sm w-96 text-xl font-medium"
+      class="flex flex-col text-center divide-y max-w-sm w-96 text-xl text-gray-700"
     >
       {{ range where .Site.RegularPages "Section" "categories" }}
         <li class="py-2">
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          <a class="hover:font-medium" href="{{ .Permalink }}"
+            ><p>{{ .Title }}</p></a
+          >
         </li>
       {{ end }}
     </ul>
