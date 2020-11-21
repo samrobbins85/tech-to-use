@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A website for what project you could use for a project",
   "scripts": {
-    "dev": "hugo server",
+    "dev": "hugo server --disableFastRender",
     "build": "NODE_ENV=production hugo"
   },
   "repository": {

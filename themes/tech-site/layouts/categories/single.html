@@ -19,6 +19,80 @@
         <span>Home</span></a
       >
     </div>
-    <h1 class="text-center text-5xl font-semibold pt-16">{{ .Title }}</h1>
+    <h1 class="text-center text-5xl font-semibold pt-6 pb-12">{{ .Title }}</h1>
+    <div class="h-40">
+      <div class="flex justify-center">
+        <script
+          async
+          type="text/javascript"
+          src="//cdn.carbonads.com/carbon.js?serve=CEBIVKQN&placement=csnotesme"
+          id="_carbonads_js"
+        ></script>
+      </div>
+    </div>
+    <div class="overflow-x-auto px-2">
+      <table class="table-auto w-1/2 mx-auto">
+        <thead>
+          <tr class="border-b-2 border-gray-400 text-teal-500">
+            <th class="px-4 py-2">Product</th>
+            {{ if .Params.properties.description }}
+              <th class="px-4 py-2 ">Description</th>
+            {{ end }}
+            {{ if .Params.properties.type }}
+              <th class="px-4 py-2 ">Type</th>
+            {{ end }}
+            {{ if .Params.properties.limit }}
+              <th class="px-4 py-2 ">Free Limit</th>
+            {{ end }}
+            {{ if .Params.properties.pricing }}
+              <th class="px-4 py-2 ">Pricing page</th>
+            {{ end }}
+          </tr>
+        </thead>
+        <tbody>
+          {{ range .Params.tech }}
+            <tr class="text-gray-500">
+              <td class=" px-4 py-4  font-medium flex justify-center">
+                <a
+                  href="{{ .link }}"
+                  class="border-b-2 hover:border-blue-500 border-transparent border-tr px-8 pb-2 flex justify-center items-center"
+                >
+                  <img
+                    src="{{ .image }}"
+                    class="h-12 inline-block pr-4"
+                    alt="{{ .name }}"
+                  />
+                  {{ if not .name_hidden }}
+                    <span>{{ .name }}</span>
+                  {{ end }}
+                </a>
+              </td>
+              {{ if $.Params.properties.description }}
+                <td class="px-4 py-2  font-medium text-center">
+                  {{ .description }}
+                </td>
+              {{ end }}
+              {{ if $.Params.properties.type }}
+                <td class="px-4 py-2  font-medium text-center">
+                  {{ .type }}
+                </td>
+              {{ end }}
+              {{ if $.Params.properties.limit }}
+                <td class="px-4 py-2  font-medium text-center">
+                  {{ .limit }}
+                </td>
+              {{ end }}
+              {{ if $.Params.properties.pricing }}
+                <td
+                  class="px-4 py-2 text-blue-600 font-medium text-center hover:underline"
+                >
+                  <a href="{{ .pricing }}">{{ .name }}</a>
+                </td>
+              {{ end }}
+            </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
   </div>
 {{ end }}
