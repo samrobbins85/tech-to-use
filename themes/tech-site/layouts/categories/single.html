@@ -41,6 +41,9 @@
             {{ if .Params.properties.type }}
               <th class="px-4 py-2 ">Type</th>
             {{ end }}
+            {{ if .Params.properties.free_tier }}
+              <th class="px-4 py-2 ">Free Tier?</th>
+            {{ end }}
             {{ if .Params.properties.limit }}
               <th class="px-4 py-2 ">Free Limit</th>
             {{ end }}
@@ -77,16 +80,59 @@
                   {{ .type }}
                 </td>
               {{ end }}
+              {{ if $.Params.properties.free_tier }}
+                <td
+                  class="px-4 py-2  font-medium text-center flex justify-center"
+                >
+                  {{ if .free_tier }}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="48px"
+                      height="48px"
+                    >
+                      <path
+                        fill="#c8e6c9"
+                        d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"
+                      />
+                      <path
+                        fill="#4caf50"
+                        d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z"
+                      />
+                    </svg>
+                    {{ else }}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="48px"
+                      height="48px"
+                    >
+                      <path
+                        fill="#f44336"
+                        d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"
+                      />
+                      <path
+                        fill="#fff"
+                        d="M29.656,15.516l2.828,2.828l-14.14,14.14l-2.828-2.828L29.656,15.516z"
+                      />
+                      <path
+                        fill="#fff"
+                        d="M32.484,29.656l-2.828,2.828l-14.14-14.14l2.828-2.828L32.484,29.656z"
+                      />
+                    </svg>
+                  {{ end }}
+                </td>
+              {{ end }}
               {{ if $.Params.properties.limit }}
                 <td class="px-4 py-2  font-medium text-center">
                   {{ .limit }}
                 </td>
               {{ end }}
               {{ if $.Params.properties.pricing }}
-                <td
-                  class="px-4 py-2 text-blue-600 font-medium text-center hover:underline"
-                >
-                  <a href="{{ .pricing }}">{{ .name }}</a>
+                <td class="px-4 py-2 text-blue-600 font-medium text-center">
+                  <a class="hover:underline" href="{{ .pricing }}"
+                    >{{ .name }}</a
+                  >
                 </td>
               {{ end }}
             </tr>

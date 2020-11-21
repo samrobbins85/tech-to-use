@@ -5,8 +5,10 @@
       What technologies you can use when building your next website
     </h2>
   </div>
-  <div class="flex justify-center">
-    <ul class="flex flex-col text-center divide-y max-w-sm w-96 text-xl">
+  <div class="flex justify-center pt-8">
+    <ul
+      class="flex flex-col text-center divide-y max-w-sm w-96 text-xl font-medium"
+    >
       {{ range where .Site.RegularPages "Section" "categories" }}
         <li class="py-2">
           <a href="{{ .Permalink }}">{{ .Title }}</a>
