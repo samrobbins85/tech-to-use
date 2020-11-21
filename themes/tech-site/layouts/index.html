@@ -11,7 +11,7 @@
     >
       {{ range where .Site.RegularPages "Section" "categories" }}
         <li class="py-2">
-          <a class="hover:font-medium" href="{{ .Permalink }}"
+          <a class="hover:font-medium" href="{{ .RelPermalink }}"
             ><p>{{ .Title }}</p></a
           >
         </li>
