@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/samrobbins85/tech-to-use#readme",
   "devDependencies": {
+    "@tailwindcss/typography": "^0.3.1",
     "postcss-cli": "^8.3.0",
     "prettier": "^2.1.2",
     "prettier-plugin-go-template": "0.0.10"
