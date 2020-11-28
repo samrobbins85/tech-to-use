@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://webapp.tools/"
 languageCode = "en-gb"
 title = "Web app tools"
 theme="tech-site"
