@@ -149,9 +149,9 @@
                   >
                 </td>
                 {{ else if $.Params.properties.pricing }}
-                <td
-                  class="px-4 py-2 text-blue-600 font-medium text-center"
-                ></td>
+                <td class="px-4 py-2 text-gray-600 font-medium text-center">
+                  Free
+                </td>
               {{ end }}
               {{ if and ($.Params.properties.license) (.license) }}
                 <td class="px-4 py-2 text-blue-600 font-medium text-center">
@@ -159,7 +159,7 @@
                     >{{ .license_name }}</a
                   >
                 </td>
-                {{ else if $.Params.properties.pricing }}
+                {{ else if $.Params.properties.license }}
                 <td
                   class="px-4 py-2 text-blue-600 font-medium text-center"
                 ></td>
