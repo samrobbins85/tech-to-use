@@ -22,6 +22,20 @@ tech:
     limit: No Limit
     pricing: https://firebase.google.com/pricing
     description: Both email/password and social login
+  - name: Userbase
+    link: https://userbase.com/
+    image: https://userbase.com/8bde22dfa8b59c961788a584d92cf583.png
+    name_hidden: true
+    description: Authentication for static sites
+    free_tier: true
+    limit: 3 Users
+    pricing: https://userbase.com/pricing/
+  - name: NextAuth.js
+    link: https://next-auth.js.org/
+    image: https://next-auth.js.org/img/logo/logo-sm.png
+    free_tier: true
+    limit: No Limit
+    description: Easy implement authentication in Next.js sites
 
 properties:
   limit: true

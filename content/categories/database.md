@@ -38,6 +38,13 @@ tech:
     free_tier: true
     limit: 10K Rows
     pricing: https://www.heroku.com/pricing#data-services
+  - name: Cloudflare workers KV
+    image: https://cdn.svgporn.com/logos/cloudflare.svg
+    link: https://www.cloudflare.com/products/workers-kv/
+    type: NoSQL
+    free_tier: true
+    limit: 1GB
+    pricing: https://www.cloudflare.com/en-gb/products/workers-kv/
   - name: AWS RDS
     image: https://cdn.svgporn.com/logos/aws-rds.svg
     link: https://aws.amazon.com/rds/?did=ft_card&trk=ft_card
