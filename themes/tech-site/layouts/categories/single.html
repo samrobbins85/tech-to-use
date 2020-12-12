@@ -54,6 +54,9 @@
             {{ if .Params.properties.pricing }}
               <th class="px-4 py-2 ">Pricing page</th>
             {{ end }}
+            {{ if .Params.properties.license }}
+              <th class="px-4 py-2 ">License</th>
+            {{ end }}
           </tr>
         </thead>
         <tbody>
@@ -143,6 +146,17 @@
                 <td class="px-4 py-2 text-blue-600 font-medium text-center">
                   <a class="hover:underline" href="{{ .pricing }}"
                     >{{ .name }}</a
+                  >
+                </td>
+                {{ else if $.Params.properties.pricing }}
+                <td
+                  class="px-4 py-2 text-blue-600 font-medium text-center"
+                ></td>
+              {{ end }}
+              {{ if and ($.Params.properties.license) (.license) }}
+                <td class="px-4 py-2 text-blue-600 font-medium text-center">
+                  <a class="hover:underline" href="{{ .license }}"
+                    >{{ .license_name }}</a
                   >
                 </td>
                 {{ else if $.Params.properties.pricing }}
