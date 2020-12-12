@@ -16,10 +16,6 @@ tech:
     image: https://cdn.svgporn.com/logos/nuxt.svg
     name_hidden: true
     type: Vue
-  - name: Gatsby
-    link: https://www.gatsbyjs.com/
-    image: https://cdn.svgporn.com/logos/gatsby.svg
-    type: React
 
 properties:
   type: true
