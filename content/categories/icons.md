@@ -43,6 +43,12 @@ tech:
     description: Large range of icons
     license_name: Apache 2.0
     license: https://github.com/Iconscout/unicons/blob/master/LICENSE
+  - name: Flagpack
+    image: https://www.flagpack.xyz/favicon.svg
+    link: https://www.flagpack.xyz/
+    description: Flag icons
+    license_name: MIT
+    license: https://github.com/Yummygum/flagpack-core/blob/main/LICENSE
 properties:
   description: true
   license: true
