@@ -43,6 +43,7 @@ tech:
     limit: 5000 users
     description: All of user management, not just authentication
     name_hidden: true
+    pricing: https://clerk.dev/pricing
 
 properties:
   limit: true
