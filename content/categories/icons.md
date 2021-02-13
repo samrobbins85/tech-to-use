@@ -55,6 +55,12 @@ tech:
     description: Friendly icons
     license_name: BSD
     license: https://github.com/lachlanjc/supercons/blob/main/LICENSE
+  - name: Ionicons
+    image: https://cdn.svgporn.com/logos/ionic-icon.svg
+    link: https://ionicons.com/
+    descriptions: Range of icons by ionic
+    license_name: MIT
+    license: https://github.com/ionic-team/ionicons/blob/master/LICENSE
 properties:
   description: true
   license: true
