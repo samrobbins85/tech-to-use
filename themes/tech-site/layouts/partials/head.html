@@ -9,18 +9,11 @@
   {{ end }}
 
   <link href="{{ $styles.Permalink | relURL }}" rel="stylesheet" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Cloudflare Web Analytics -->
   <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-QEZF8GSF9E"
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"token": "07d8650747aa4af1812e1db2adce552e"}'
   ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-QEZF8GSF9E");
-  </script>
+  <!-- End Cloudflare Web Analytics -->
 </head>
