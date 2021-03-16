@@ -36,6 +36,14 @@ tech:
     free_tier: true
     limit: No Limit
     description: Easy implement authentication in Next.js sites
+  - name: Clerk
+    link: https://clerk.dev/
+    image: https://uploads-ssl.webflow.com/5fd7bfc6a17b919b04ec003e/5fe38575052e4553beacc550_logomark.svg
+    free_tier: true
+    limit: 5000 users
+    description: All of user management, not just authentication
+    name_hidden: true
+    pricing: https://clerk.dev/pricing
 
 properties:
   limit: true
